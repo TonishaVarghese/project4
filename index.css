@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fffaf7;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d44208;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffe3d4;
+}
+
+.hero {
+    background: url('foodtruckbg.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    background-color: #d44208;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background: #503529;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #e4d6d2;
+}
+
+.menu {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #ff5e00;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item {
+    background: #fffefc;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    color: #ff5e00;
+}
+
+.item p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.item button {
+    padding: 10px 20px;
+    background: #ff5e00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.item button:hover {
+    background: #e24d00;
+}
+
+.location,
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background: #fff3e6;
+}
+
+.location h2,
+.contact h2 {
+    color: #ff5e00;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+form button {
+    background: #ff5e00;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #e24d00;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
